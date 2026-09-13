@@ -172,6 +172,21 @@ page(
       </td>
     </tr>
     <tr>
+      <td><strong>Approximate location</strong></td>
+      <td>
+        Only if you allow it. The app asks once, after explaining why, and nothing stops working
+        if you say no. We request the <em>approximate</em> Android location permission, never the
+        precise one, and the coordinates are rounded to about a kilometre on your device before
+        they are sent &mdash; and rounded again on our server. What we store is a neighbourhood
+        and its nearest place name, not an address. It is read only while the app is open, at
+        most once a day, and only the current position is kept &mdash; we do not build a history
+        of your movements. Used to verify accounts, prevent fraudulent sign-ups, and see which
+        regions to support. Visible only to the app owner (see section 8); never to other users.
+        You can withdraw it at any time in Android Settings &rarr; Apps &rarr; Trade Learn &rarr;
+        Permissions.
+      </td>
+    </tr>
+    <tr>
       <td><strong>Technical logs</strong></td>
       <td>IP address and request timestamps, kept briefly for security and abuse prevention.</td>
     </tr>
@@ -179,7 +194,8 @@ page(
 
   <h3>What we do <em>not</em> collect</h3>
   <ul>
-    <li>No location data. The app does not request location permission.</li>
+    <li>No precise location. The app never requests the precise-location permission, and never
+        stores an address or a movement history &mdash; see the approximate-location row above.</li>
     <li>No contacts, photos, files, microphone or camera access.</li>
     <li>No advertising identifiers. There are no ads and no ad networks in this app.</li>
     <li>No third-party analytics or tracking SDKs.</li>
@@ -270,8 +286,9 @@ page(
   <p>
     Trade Learn has a single owner account used to run the service. It can see the list of
     registered users, each account's name, email, mobile number, subscription state and payment
-    history, when each user was last active, and the practice trades currently open. This is for
-    support, billing and abuse prevention. It is not shared with anyone else.
+    history, when each user was last active, the practice trades currently open, and &mdash; if
+    you allowed it &mdash; your approximate area. This is for support, billing and abuse
+    prevention. It is not shared with anyone else.
   </p>
 
   <h2>9. Your rights and choices</h2>
